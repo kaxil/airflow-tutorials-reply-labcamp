@@ -253,7 +253,7 @@ This runs the task locally as if it was for 2018-10-281, ignoring other tasks an
 Copy your DAG to dags folder if not already. Once the scheduler is up and running, refresh the DAGs page in the web UI. You should see `airflow_tutorial_v01` in the list of DAGs with an on/off switch next to it. Turn on the DAG in the web UI and sit back while Airflow starts backfilling the dag runs!
 
 
-## 3. Exercises
+### Exercises
 
 You now know the basics of setting up Airflow, creating a DAG and turning it on; time to go deeper!
 
