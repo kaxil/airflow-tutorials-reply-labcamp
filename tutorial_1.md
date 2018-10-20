@@ -243,7 +243,7 @@ You can manually test a single task for a given `execution_date` with `airflow t
 airflow test airflow_tutorial_v01 print_world 2018-10-28
 ```
 
-This runs the task locally as if it was for 2018-10-281, ignoring other tasks and without communicating to the database.
+This runs the task locally as if it was for 2018-10-28, ignoring other tasks and without communicating to the database.
 
 
 ### Activate the DAG
@@ -256,4 +256,4 @@ Copy your DAG to dags folder if not already. Once the scheduler is up and runnin
 You now know the basics of setting up Airflow, creating a DAG and turning it on; time to go deeper!
 
 * Change the schedule interval to every 2 minutes.
-* Add a task that prints Current date using `BashOperator` or `PythonOperator`.
+* Add a task that prints current date using `BashOperator` or `PythonOperator`.
