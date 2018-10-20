@@ -15,17 +15,19 @@ def print_world():
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': airflow.utils.dates.days_ago(2),
+    # 'start_date': airflow.utils.dates.days_ago(2),
     # You can also set the start date as follows
-    # 'start_date': dt.datetime(year=2018, month=10, day=22),
+    'start_date': dt.datetime(year=2018, month=10, day=22),
     'retries': 1,
     'retry_delay': dt.timedelta(minutes=5),
 }
 
 dag = DAG(
-    dag_id='DAG_1_airflow_tutorial',
+    dag_id='airflow_tutorial_v01',
     default_args=default_args,
-    schedule_interval=dt.timedelta(minutes=2)
+    schedule_interval='0 * * * *',
+    # You can also specify schedule interval as follows
+    # schedule_interval=dt.timedelta(hours=1)
 )
 
 print_hello = BashOperator(

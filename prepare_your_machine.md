@@ -71,8 +71,7 @@ If you don't set the environment variable `AIRFLOW_HOME`, Airflow will create th
 Set environment variable `AIRFLOW_HOME` to e.g. your current directory `$(pwd)`:
 
 ```bash
-# change the default location ~/airflow if you want:
-export AIRFLOW_HOME="$(pwd)"
+export AIRFLOW_HOME=~/airflow
 ```
 
 or any other suitable directory.
@@ -88,7 +87,7 @@ Now start the web server and go to [localhost:8080](http://localhost:8080/) to c
 ```bash
 airflow webserver --port 8080
 ```
-Start the Scheduler in a different terminal session:
+Start the Scheduler in a different terminal session:
 
 ```bash
 airflow scheduler
