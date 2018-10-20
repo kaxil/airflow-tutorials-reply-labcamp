@@ -240,10 +240,10 @@ python airflow_tutorial.py
 You can manually test a single task for a given `execution_date` with `airflow test`:
 
 ```bash
-airflow test airflow_tutorial_v01 print_world 2018-10-28
+airflow test airflow_tutorial_v01 print_world 2018-10-11
 ```
 
-This runs the task locally as if it was for 2018-10-28, ignoring other tasks and without communicating to the database.
+This runs the task locally as if it was for 2018-10-11, ignoring other tasks and without communicating to the database.
 
 
 ### Activate the DAG
