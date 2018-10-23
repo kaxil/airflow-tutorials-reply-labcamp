@@ -15,7 +15,7 @@ The DAG of this tutorial will consist of the following tasks:
 
 * print `'Hello'`
 * wait for the data - to simulate this we will upload a '_success' file
-* print `'world. File Received.` using BashOperator
+* print `'world. File Received.'` using BashOperator
 * use DummyOperator for a task called `etl` that does nothing (Yes - it is just a placeholder that we can replace when by an operator like BashOperator/PythonOperator etc)
 
 and we'll have `None` as `schedule_interval` as we just want to trigger this DAG manually from the UI.
