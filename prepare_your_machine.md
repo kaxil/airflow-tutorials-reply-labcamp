@@ -52,8 +52,6 @@ pip install apache-airflow==1.10.0
 ```
 
 
-The current list of `extras` is available at [https://airflow.incubator.apache.org/installation.html#extra-packages](https://airflow.incubator.apache.org/installation.html#extra-packages).
-
 ### Run Airflow
 Before you can use Airflow you have to initialize its database.
 The database contains information about historical & running workflows, connections to external data sources, 
